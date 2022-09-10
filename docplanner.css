@@ -1,0 +1,363 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  font-weight: 400;
+  font-family: Roboto, Arial, sans-serif;
+  color: #747474;
+}
+
+.body h1 {
+  margin: 1em 0;
+  font-family: Work Sans, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+  line-height: 1.2;
+  color: #00b39b;
+}
+
+.main {
+  margin: 100px auto 0px;
+}
+
+/* --------------------------- NavBar --------------------------- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  z-index: 1;
+  background: hsla(0, 0%, 100%, 0.98);
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
+}
+
+.main-header {
+  max-width: 1015px;
+  height: 64px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-docplanner {
+  width: 268px;
+  height: 33px;
+}
+
+.nav_links {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2em;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
+
+.nav_links li {
+  padding: 0px 10px;
+}
+
+.nav_links li a {
+  text-decoration: none;
+  color: #ababab;
+}
+
+.nav_links li a:hover {
+  color: #00b39b;
+}
+
+/* --------------------------- Lead_Section --------------------------- */
+.lead_section {
+  max-width: 1015px;
+  margin: 2rem auto 3.75rem;
+  padding: 0 20px;
+}
+
+.lead_logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.lead_section h1 {
+  text-align: center;
+  font-size: 2.125rem;
+}
+
+.lead_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -10px;
+}
+
+.lead_para {
+  width: 50%;
+  margin: 0.8em 0;
+  padding: 10px;
+  line-height: 1.75;
+}
+
+/* --------------------------- Services_Section --------------------------- */
+.services_section {
+  max-width: 1015px;
+  margin: 3.75rem auto 2.5rem;
+  padding: 0 20px;
+}
+
+.services_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -10px;
+}
+
+.services1,
+.services2,
+.services3 {
+  width: 32%;
+  height: 345px;
+  border: 0 none;
+  border-radius: 10px;
+}
+
+.services1 {
+  background-color: #00ccb1;
+}
+.services1:hover {
+  background: hsl(172, 100%, 42%);
+}
+
+.services2 {
+  background-color: #3d83df;
+}
+.services2:hover {
+  background: hsl(214, 72%, 58%);
+}
+
+.services3 {
+  background-color: #1b2734;
+}
+.services3:hover {
+  background: hsl(211, 32%, 18%);
+}
+
+.services_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em;
+  height: 100%;
+}
+
+.services_item h1 {
+  font-size: 1.625em;
+  font-weight: 400;
+  color: #fff;
+  margin: 0.3em 0;
+}
+
+.services_item h2 {
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
+  color: #fff;
+  font-family: Work Sans, Arial, sans-serif;
+}
+
+.services_item .style-select select {
+  background: transparent;
+  border: 0 none;
+  color: #fff;
+  letter-spacing: 0.04em;
+  font-size: 1.2rem;
+  outline: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.services_item .style-select select option {
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #333;
+}
+
+/* --------------------------- Brands_Section --------------------------- */
+.brands_section {
+  max-width: 1015px;
+  margin: 2.5rem auto 3.125rem;
+  padding: 0 20px;
+}
+
+.brands_container {
+  display: flex;
+}
+
+.brands_section h1 {
+  width: 33%;
+  font-size: 1.625em;
+  margin: 0.25em 0 0.35em;
+}
+
+.brands_logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 67%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.brands_logos li {
+  /* font-size: 1rem; */
+  /* display: inline-block; */
+  width: 160px;
+  padding: 5px 0 5px 5px;
+  width: auto;
+}
+
+.brands_logos a {
+  display: inline-block;
+  padding: 5px 0;
+  /* text-decoration: none;
+    color: #3d83df;
+    outline: 0;
+    transition: all .2s ease 0s;
+    background-color: transparent; */
+}
+
+.brands_logos a svg {
+  height: 20px;
+  width: auto;
+  max-width: 100%;
+  padding-left: 10px;
+  fill: hsla(0, 0%, 67%, 0.7);
+}
+
+.brands_logos a:hover svg {
+  fill: #00b39b;
+}
+
+.brands_logos .tuotempo,
+.brands_logos .gipo,
+.brands_logos .clinicloud,
+.brands_logos .jameda {
+  transition: all 0.2s ease 0s;
+  filter: invert(98%) sepia(2%) saturate(0) hue-rotate(180deg) brightness(300%)
+    contrast(0);
+  -webkit-filter: invert(98%) sepia(2%) saturate(0) hue-rotate(180deg)
+    brightness(300%) contrast(0);
+  opacity: 0.55;
+}
+
+.brands_logos .tuotempo:hover,
+.brands_logos .gipo:hover,
+.brands_logos .clinicloud:hover,
+.brands_logos .jameda:hover {
+  filter: none;
+}
+
+/* --------------------------- Stats_Section --------------------------- */
+.stats_section {
+  background: #d9f7f6;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(0, 204, 177, 0.01) 5%,
+    rgba(61, 199, 223, 0.1)
+  );
+  padding: 1.875em 0 0.625em;
+  overflow: hidden;
+  margin: 3.125rem auto 5.5rem;
+}
+
+.stats_container {
+  max-width: 1015px;
+  padding: 20px 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.stats_inner {
+  margin: 0 -10px;
+  display: flex;
+}
+
+.stats_header1,
+.stats_header2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.stats_header1 h1 {
+  font-size: 2.125rem;
+  margin: 0;
+}
+
+.stats_header1 p {
+  max-width: 415px;
+  font-size: 0.875em;
+  line-height: 1.7;
+  margin: 1.6em 0;
+  color: #747474;
+}
+
+.stats_inner_logo {
+  position: absolute;
+  right: 67%;
+  top: 45%;
+  width: 456px;
+  height: 435px;
+}
+
+/*cards container*/
+.stats_header_inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 520px;
+  width: 100%;
+}
+
+/*cards*/
+.stats_header_inner1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  background: #fff;
+  border-width: 0px !important;
+  border-radius: 5px !important;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
+  height: 250px;
+  width: 230px;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  font-size: 0.8125em;
+  align-items: center;
+  justify-content: center;
+}
+
+.card2,
+.card4 {
+  transform: translateY(-30px);
+}
+
+.card-title {
+  margin: 0.5em 0;
+  color: #00b39b;
+  font-size: 1.7em;
+  font-weight: 300;
+  font-family: Work Sans, Arial, sans-serif;
+}
